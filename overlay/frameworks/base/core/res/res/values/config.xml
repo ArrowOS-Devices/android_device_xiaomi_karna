@@ -659,4 +659,8 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">24.0dip</dimen>
     <dimen name="status_bar_height_landscape">24.0dip</dimen>
+
+    <!-- Flag indicating which package name can access the persistent data partition -->
+    <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
+
 </resources>

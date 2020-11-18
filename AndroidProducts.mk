@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_surya.mk
+    $(LOCAL_DIR)/arrow_karna.mk

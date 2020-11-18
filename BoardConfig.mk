@@ -6,7 +6,7 @@
 
 BUILD_BROKEN_DUP_RULES := true
 
-DEVICE_PATH := device/xiaomi/surya
+DEVICE_PATH := device/xiaomi/karna
 
 # Architecture
 TARGET_ARCH := arm64
@@ -29,7 +29,7 @@ TARGET_USES_64_BIT_BINDER := true
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := surya
+TARGET_OTA_ASSERT_DEVICE := karna
 TARGET_NO_BOOTLOADER := true
 
 # Bootloader
@@ -81,8 +81,8 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 BOARD_HAVE_QCOM_FM := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_surya
-TARGET_RECOVERY_DEVICE_MODULES := libinit_surya
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_karna
+TARGET_RECOVERY_DEVICE_MODULES := libinit_karna
 
 # Kernel
 BOARD_RAMDISK_OFFSET := 0x01000000
@@ -109,9 +109,9 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE) --board ""
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-  TARGET_KERNEL_CONFIG := surya_defconfig
+  TARGET_KERNEL_CONFIG := karna_defconfig
   TARGET_KERNEL_CLANG_COMPILE := true
-  TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
+  TARGET_KERNEL_SOURCE := kernel/xiaomi/karna
 endif
 
 # Platform
